@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/itemView.css">
+  <title>Item View</title>
+
+  <link href="/static/lib/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="window">
+  <header class="w-100 d-flex justify-content-between align-items-center">
+    <a id="header-title" href="main">
+      <img class="logo" src="/static/img/logo2.png" alt="ロゴ">
+      Battle of Combine Robot!!
+    </a>
+    <div id="header-nav">
+      <ul>
+        <li><a href="main">[メイン]</a></li>
+        <li><a href="itemView">[アイテム]</a></li>
+        <li><a href="capsuleToyMachine">[ガチャ]</a></li>
+        <li><a href="battle">[バトル]</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="frame">
+    <div class="item-frame">
+      <h5>BODY</h5>
+      <ul id="body-item">
+        <li id="001" class="item-view"></li>
+        <li id="002" class="item-view"></li>
+        <li id="003" class="item-view"></li>
+        <li id="004" class="item-view"></li>
+        <li id="005" class="item-view"></li>
+        <li id="006" class="item-view"></li>
+        <li id="007" class="item-view"></li>
+        <li id="008" class="item-view"></li>
+        <li id="009" class="item-view"></li>
+        <li id="010" class="item-view"></li>
+        <li id="011" class="item-view"></li>
+        <li id="012" class="item-view"></li>
+        <li id="013" class="item-view"></li>
+        <li id="014" class="item-view"></li>
+        <li id="015" class="item-view"></li>
+        <li id="016" class="item-view"></li>
+      </ul>
+    </div>
+    <div class="item-frame">
+      <h5>ARM</h5>
+      <ul id="arm-item">
+        <li id="101" class="item-view"></li>
+        <li id="102" class="item-view"></li>
+        <li id="103" class="item-view"></li>
+        <li id="104" class="item-view"></li>
+        <li id="105" class="item-view"></li>
+        <li id="106" class="item-view"></li>
+        <li id="107" class="item-view"></li>
+        <li id="108" class="item-view"></li>
+        <li id="109" class="item-view"></li>
+        <li id="110" class="item-view"></li>
+        <li id="111" class="item-view"></li>
+        <li id="112" class="item-view"></li>
+        <li id="113" class="item-view"></li>
+        <li id="114" class="item-view"></li>
+        <li id="115" class="item-view"></li>
+        <li id="116" class="item-view"></li>
+      </ul>
+    </div>
+    <div class="item-frame">
+      <h5>LEG</h5>
+      <ul id="leg-item">
+        <li id="201" class="item-view"></li>
+        <li id="202" class="item-view"></li>
+        <li id="203" class="item-view"></li>
+        <li id="204" class="item-view"></li>
+        <li id="205" class="item-view"></li>
+        <li id="206" class="item-view"></li>
+        <li id="207" class="item-view"></li>
+        <li id="208" class="item-view"></li>
+        <li id="209" class="item-view"></li>
+        <li id="210" class="item-view"></li>
+        <li id="211" class="item-view"></li>
+        <li id="212" class="item-view"></li>
+        <li id="213" class="item-view"></li>
+        <li id="214" class="item-view"></li>
+        <li id="215" class="item-view"></li>
+        <li id="216" class="item-view"></li>
+      </ul>
+    </div>
+  </div>
+  <p id="toolTip"></p>
+  <script>
+    var jsonBodyData = {{ bodyData | tojson }};
+    var jsonArmData = {{ armData | tojson }};
+    var jsonLegData = {{ legData | tojson }};
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/static/lib/js/bootstrap.min.js"></script>
+  <script src="/static/js/parts.js"></script>
+  <script src="/static/js/itemView.js"></script>
+</body>
+
+</html>

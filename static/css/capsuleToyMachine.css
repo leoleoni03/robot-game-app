@@ -1,0 +1,132 @@
+body.window{
+    background-color: rgb(54, 54, 54);
+}
+
+/* ヘッダーレイアウト */
+header {
+    height: auto;
+    box-shadow: 0px 0px 5px 0px hsla(0, 0%, 7%, 0.3);
+    background: rgb(54, 54, 54);
+    border-bottom: 1px solid #f0f0f0;
+}
+#header-title{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: x-large;
+}
+.logo{
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+}
+#header-nav ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+#header-nav ul li{
+    display: inline-block;
+    background: rgb(54, 54, 54);
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    padding: 10px 0;
+    border-left: 1px solid #f0f0f0;
+}
+#header-nav ul li a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* 全体描画 */
+#frame {
+    border: 10px solid rgb(54, 54, 54);
+    background-color: rgb(54, 54, 54);
+    height: 100%;
+}
+
+#title {
+    text-align: center;
+    color: #f0f0f0 !important;
+}
+
+#money-frame{
+    display: flex;
+    justify-content: flex-end;
+}
+#money {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    background-color: #f0f0f0;
+    border: 3px groove rgb(30, 30, 30);
+    padding: 10px;
+    font-size: large;
+}
+
+#img-frame{
+    position: relative;
+    width: 444px;
+    margin: auto;
+}
+#gacha-img{
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    width: 444px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+
+#gacha-bar-img{
+    position: absolute;
+    right: 42%;
+    bottom: 32%;
+    width: 70px;
+    transform: rotate(0deg);
+}
+#gacha-bar-img:hover {
+    transform: rotate(90deg);
+    transition: all 1s;
+}
+
+#gacha-out-img{
+    position: absolute;
+    right: 23%;
+    bottom: 7%;
+    height: 110.45px;
+    width: 240px;
+}
+
+#capsuleOpen{
+    /* display: none; */
+    position: absolute;
+    border-radius: 15px;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:#f0f0f0;
+    text-align: center;
+    transform: rotateX(90deg);
+    /* transform: rotateY(90deg); */
+    /* transform: rotate3d(1,1,0,90deg); */
+}
+#hit-title{
+    padding: 5px;
+    margin: 0;
+}
+#hit-img-frame{
+    background-color: rgba(219, 183, 2, 0.5);
+    /* width: 100%; */
+    width: 444px;
+    /* height: 490px; */
+    border: 20px inset  rgb(54, 54, 54);
+    padding: 40px;
+}
+#hit-img{
+    height: 365px;
+}

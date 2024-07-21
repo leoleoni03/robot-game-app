@@ -1,0 +1,31 @@
+{
+   "money": 88600,
+   "body": [
+      "/static/img/body0.png",
+      "/static/img/body6.png",
+      "/static/img/body2.png",
+      "/static/img/body99.png",
+      "/static/img/body3.png",
+      "/static/img/body1.png"
+   ],
+   "arm": [
+      "/static/img/arm0.png",
+      "/static/img/arm1.png",
+      "/static/img/arm5.png"
+   ],
+   "leg": [
+      "/static/img/leg0.png",
+      "/static/img/leg5.png",
+      "/static/img/leg1.png",
+      "/static/img/leg2.png"
+   ],
+   "robot_param": [
+      {
+         "HP": 4,
+         "ATTACK": 4,
+         "BULLET": 4,
+         "RANGE": 4,
+         "SPEED": 4
+      }
+   ]
+}

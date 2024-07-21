@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/capsuleToyMachine.css">
+    <title>Capsule Toy Machine</title>
+
+    <link href="/static/lib/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="window">
+    <header class="w-100 d-flex justify-content-between align-items-center">
+        <a id="header-title" href="main">
+            <img class="logo" src="/static/img/logo2.png" alt="ロゴ">
+            Battle of Combine Robot!!
+        </a>
+        <div id="header-nav">
+            <ul>
+                <li><a href="main">[メイン]</a></li>
+                <li><a href="itemView">[アイテム]</a></li>
+                <li><a href="capsuleToyMachine">[ガチャ]</a></li>
+                <li><a href="battle">[バトル]</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="frame">
+        <div>
+            <h5 id="title">ガチャガチャ‼</h5>
+            <div id="money-frame">
+                <p id="money">{{ money }}</p>
+            </div>
+            <div id="img-frame">
+                <img id="gacha-img" src="/static/img/gacha1.png" alt="">
+                <img id="gacha-bar-img" src="/static/img/gacha2.png" alt="">
+                <img id="gacha-out-img" src="/static/img/gacha3.png" alt="">
+                <div id="capsuleOpen">
+                    <h5 id="hit-title">当たった！！</h5>
+                    <div id="hit-img-frame">
+                        <img id="hit-img" src="/static/img/body0.png" alt="">
+                    </div>
+                    <h7 id="hit-param">
+                        【パラメータ値】<br>
+                        HP : <br>
+                        ATTACK : <br>
+                        DEFENCE : <br>
+                        RANGE :  <br>
+                        SPEED : <br>
+                    </h7>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/lib/js/bootstrap.min.js"></script>
+    <script src="/static/js/parts.js"></script>
+    <script src="/static/js/capsuleToyMachine.js"></script>
+</body>
+
+</html>

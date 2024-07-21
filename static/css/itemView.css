@@ -1,0 +1,110 @@
+body.window{
+    background-color: rgb(54, 54, 54);
+}
+
+/* ヘッダーレイアウト */
+header {
+    height: auto;
+    box-shadow: 0px 0px 5px 0px hsla(0, 0%, 7%, 0.3);
+    background: rgb(54, 54, 54);
+    border-bottom: 1px solid #f0f0f0;
+}
+#header-title{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: x-large;
+}
+.logo{
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+}
+#header-nav ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+#header-nav ul li{
+    display: inline-block;
+    background: rgb(54, 54, 54);
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    padding: 10px 0;
+    border-left: 1px solid #f0f0f0;
+}
+#header-nav ul li a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* 全体描画 */
+#frame {
+    border: 10px solid rgb(54, 54, 54);
+    background-color: rgb(54, 54, 54);
+}
+
+h5 {
+    padding: 0 35px;
+    color: #f0f0f0 !important;
+}
+
+.item-frame{
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+ul .item-view {
+    background-color: #f0f0f0;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(20, 20, 20);
+}
+
+.item {
+    display: flex;
+    height: 90%;
+    margin: 5px auto;
+}
+
+/* tooltip */
+#toolTip {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: #545454;
+    padding: 4px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.8;
+    animation: fadeIn 0.6s;
+    color: #FFF;
+    border-radius: 3px;
+    filter: drop-shadow(0px 1px 4px #aaa);
+}
+#toolTip:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top: 8px solid #545454;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* tooltip */

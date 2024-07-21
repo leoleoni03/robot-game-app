@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/battle.css">
+    <title>Battle!!</title>
+
+    <link href="/static/lib/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="window">
+    <header class="w-100 d-flex justify-content-between align-items-center">
+        <a id="header-title" href="main">
+            <img class="logo" src="/static/img/logo2.png" alt="ロゴ">
+            Battle of Combine Robot!!
+        </a>
+        <div id="header-nav">
+            <ul>
+                <li><a href="main">[メイン]</a></li>
+                <li><a href="itemView">[アイテム]</a></li>
+                <li><a href="capsuleToyMachine">[ガチャ]</a></li>
+                <li><a href="battle">[バトル]</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="frame">
+        <div>
+            <h5 id="title">BATTLE!!</h5>
+        </div>
+        <div id="canvas-frame">
+            <canvas id="gameCanvas"></canvas>
+            <canvas id="gamebarCanvas"></canvas>
+        </div>
+    </div>
+    <script>
+        var robotData = {{ robot_data | tojson }};
+      </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/lib/js/bootstrap.min.js"></script>
+    <script src="/static/js/parts.js"></script>
+    <script src="/static/js/player.js"></script>
+    <script src="/static/js/enemy.js"></script>
+    <script src="/static/js/bullet.js"></script>
+    <script src="/static/js/game.js"></script>
+</body>
+
+</html>
