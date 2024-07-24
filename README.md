@@ -25,12 +25,12 @@
 | ①メイン画面  | ②アイテム一覧画面|
 | ------------- | ------------- |
 | <img width="959" src="https://github.com/user-attachments/assets/1f9b5e00-e862-408e-8a41-1e3ed77dda38"> | <img width="959" src="https://github.com/user-attachments/assets/79de0032-4b07-4312-b4f8-f2ae551cf77a"> |
-| パーツを組み合わせてロボットを完成させる。 | ガチャで入手したパーツを一覧で表示する。 |
+| パーツを組み合わせてロボットを完成させる画面| ガチャで入手したパーツを一覧で表示する画面|
 
 | ③ガチャ画面  | ④ゲーム画面 |
 | ------------- | ------------- |
 | <img width="959" src="https://github.com/user-attachments/assets/38879d39-9f38-4ceb-8cc8-1b7ce352f107"> | <img width="959" alt="game" src="https://github.com/user-attachments/assets/7209fc4a-61e7-4471-b86c-e6cd4ac5cf95"> |
-| お金を消費してガチャを引きパーツを入手する。 | 作成したロボットでシューティングゲームを実施する。|
+| お金を消費してガチャを引きパーツが入手できる画面 | メイン画面で作成したロボットでプレイするシューティングゲーム画面|
 
 
 # 実行方法
