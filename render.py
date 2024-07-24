@@ -6,13 +6,6 @@ import setData
 app = Flask(__name__)
 
 
-# Hello World
-@app.route('/test', methods=['GET', 'POST'])
-def hello_world():
-    print("test")
-    return render_template('HelloWorld.html')
-
-
 # main画面（合体画面）
 @app.route('/main', methods=['GET', 'POST'])
 def main():

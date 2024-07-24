@@ -18,16 +18,16 @@
     </a>
     <div id="header-nav">
       <ul>
-        <li><a href="main">[メイン]</a></li>
-        <li><a href="itemView">[アイテム]</a></li>
-        <li><a href="capsuleToyMachine">[ガチャ]</a></li>
-        <li><a href="battle">[バトル]</a></li>
+        <li><a href="main">メイン</a></li>
+        <li><a href="itemView">アイテム</a></li>
+        <li><a href="capsuleToyMachine">ガチャ</a></li>
+        <li><a href="battle">バトル</a></li>
       </ul>
     </div>
   </header>
   <div id="frame" class="mh-100 d-flex flex-row">
-    <!-- 左画面 -->
-    <div id="main" class="d-flex flex-column col" style="position: relative;">
+    <!-- 描画画面 -->
+    <div id="main" class="d-flex flex-column col">
       <!-- title -->
       <div id="title-bar">
         <h5>パーツを選択してロボットを作成しよう</h5>
@@ -52,36 +52,27 @@
           </tr>
           <tr>
             <td></td>
-            <td id="leg">
+            <td id="left-leg">
               <img id="left-legs-img" class="canvas-items" src="/static/img/leg0.png" alt="">
             </td>
             <td></td>
-            <td id="leg">
+            <td id="right-leg">
               <img id="right-legs-img" class="canvas-items" src="/static/img/leg0.png" alt="">
             </td>
             <td></td>
           </tr>
         </table>
       </div>
-      <!-- Commit Bar -->
-      <div id="commit-bar">
-        <button id="commit" type="button" onclick="saveRobot()">COMMIT!</button>
-      </div>
     </div>
-    <!-- 右サイドバー -->
+    <!-- アイテムサイドバー -->
     <div id="sidebar" class="d-flex flex-column col-mb-auto l-2">
-      <div class="d-flex h-40 flex-column">
-        <!-- パラメータチャート -->
-        <h5>能力値パラメータ</h5>
-        <canvas id="paramChart"></canvas>
-      </div>
       <!-- Item -->
       <div id="item_set" class="d-flex h-60 flex-column">
         <h5>パーツセット</h5>
         <!-- Item項目 -->
         <ul class="nav flex-column">
           <!-- カルーセルのセットアップ -->
-          <li id="carousel-parts" class="nav-item">
+          <li class="carousel-parts nav-item">
             <p class="text-center fw-bold">BODY</p>
             <!-- スライドしてアイテムを選択する -->
             <div id="body-list" class="carousel carousel-dark slide">
@@ -102,7 +93,7 @@
               </button>
             </div>
           </li>
-          <li id="carousel-parts" class="nav-item">
+          <li class="carousel-parts nav-item">
             <p class="text-center fw-bold">ARM</p>
             <!-- スライドしてアイテムを選択する -->
             <div id="arms-list" class="carousel carousel-dark slide">
@@ -123,7 +114,7 @@
               </button>
             </div>
           </li>
-          <li id="carousel-parts" class="nav-item">
+          <li class="carousel-parts nav-item">
             <p class="text-center fw-bold">LEG</p>
             <!-- スライドしてアイテムを選択する -->
             <div id="legs-list" class="carousel carousel-dark slide">
@@ -145,6 +136,15 @@
             </div>
           </li>
         </ul>
+      </div>
+    </div>
+    <div id="param-bar" class="d-flex flex-column col-mb-auto l-2">
+      <!-- パラメータチャート -->
+      <h5>能力値パラメータ</h5>
+      <canvas id="paramChart"></canvas>
+      <!-- Commit Bar -->
+      <div id="commit-bar">
+        <button id="commit" type="button" onclick="saveRobot()">SAVE!</button>
       </div>
     </div>
   </div>

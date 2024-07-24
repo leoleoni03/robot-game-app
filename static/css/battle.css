@@ -4,7 +4,7 @@ body.window {
 
 /* ヘッダーレイアウト */
 header {
-    height: auto;
+    height: 62px;
     box-shadow: 0px 0px 5px 0px hsla(0, 0%, 7%, 0.3);
     background: rgb(54, 54, 54);
     border-bottom: 1px solid #f0f0f0;
@@ -48,10 +48,6 @@ header {
     height: 100%;
 }
 
-#title {
-    text-align: center;
-    color: #f0f0f0 !important;
-}
 #canvas-frame{
     margin: auto;
 }

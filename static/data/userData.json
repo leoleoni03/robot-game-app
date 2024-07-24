@@ -1,12 +1,13 @@
 {
-   "money": 88600,
+   "money": 2400,
    "body": [
       "/static/img/body0.png",
       "/static/img/body6.png",
       "/static/img/body2.png",
       "/static/img/body99.png",
       "/static/img/body3.png",
-      "/static/img/body1.png"
+      "/static/img/body1.png",
+      "/static/img/body4.png"
    ],
    "arm": [
       "/static/img/arm0.png",
@@ -17,7 +18,8 @@
       "/static/img/leg0.png",
       "/static/img/leg5.png",
       "/static/img/leg1.png",
-      "/static/img/leg2.png"
+      "/static/img/leg2.png",
+      "/static/img/leg3.png"
    ],
    "robot_param": [
       {

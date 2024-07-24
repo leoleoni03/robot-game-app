@@ -5,7 +5,7 @@ const gamebarCtx = gamebar.getContext("2d");
 
 // ゲーム画面サイズ指定
 canvas.width = 1000;
-canvas.height = 500;
+canvas.height = 450;
 gamebar.width = canvas.width;
 gamebar.height = 50;
 
@@ -47,52 +47,6 @@ let enemies = [
     new Enemy(canvas.width - 100, canvas.height/3-50, 5, 10, 0),
     new Enemy(canvas.width - 100, canvas.height/2-25, 5, 10, 6)
 ];
-
-//// 敵Waveの種類
-//let enemyWave1 = [
-//    new Enemy(canvas.width - 100, canvas.height/5*1-75, 5, 10, 1),
-//    new Enemy(canvas.width - 100, canvas.height/5*2-75, 6, 10, 5),
-//    new Enemy(canvas.width - 100, canvas.height/5*3-75, 4, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*4-75, 6, 10, 4),
-//    new Enemy(canvas.width - 100, canvas.height/5*5-75, 5, 10, 0)
-//];
-//let enemyWave2 = [
-//    new Enemy(canvas.width - 100, canvas.height/5*1-75, 6, 10, 4),
-//    new Enemy(canvas.width - 100, canvas.height/5*2-75, 5, 10, 0),
-//    new Enemy(canvas.width - 100, canvas.height/5*3-75, 6, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*4-75, 5, 10, 1),
-//    new Enemy(canvas.width - 100, canvas.height/5*5-75, 6, 10, 5)
-//];
-//let enemyWave3 = [
-//    new Enemy(canvas.width - 100, canvas.height/5*1-75, 4, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*2-75, 5, 10, 2),
-//    new Enemy(canvas.width - 100, canvas.height/5*3-75, 6, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*4-75, 5, 10, 3),
-//    new Enemy(canvas.width - 100, canvas.height/5*5-75, 4, 10, 6)
-//];
-//let enemyWave4 = [
-//    new Enemy(canvas.width - 100, canvas.height/5*1-75, 5, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*2-75, 6, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*3-75, 7, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*4-75, 8, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*5-75, 9, 10, 6)
-//];
-//let enemyWave5 = [
-//    new Enemy(canvas.width - 100, canvas.height/5*1-75, 9, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*2-75, 8, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*3-75, 7, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*4-75, 6, 10, 6),
-//    new Enemy(canvas.width - 100, canvas.height/5*5-75, 5, 10, 6)
-//];
-//let enemyWave6 = [
-//    new Enemy(canvas.width - 100, canvas.height/5*1-75, 6, 10, 3),
-//    new Enemy(canvas.width - 100, canvas.height/5*2-75, 5, 10, 2),
-//    new Enemy(canvas.width - 100, canvas.height/5*3-75, 4, 10, 3),
-//    new Enemy(canvas.width - 100, canvas.height/5*4-75, 3, 10, 2),
-//    new Enemy(canvas.width - 100, canvas.height/5*5-75, 5, 10, 3)
-//];
-//// 敵のWaveの格納
-//let enemyWaves = [enemyWave1, enemyWave2, enemyWave3, enemyWave4, enemyWave5, enemyWave6];
 
 // ゲームのループ
 function gameLoop() {

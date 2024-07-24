@@ -66,19 +66,18 @@ function setTooltip(flag, element, elementPosition){
             param = legItemsDict[img];
         }
         
-        text = "【パラメータ値】\n" +
-            "HP : " + param[0] + "\n" +
+        text = "HP : " + param[0] + "\n" +
             "ATTACK : " + param[1] + "\n" +
             "BULLET : " + param[2] + "\n" +
             "RANGE : " + param[3] + "\n" +
             "SPEED : " + param[4];
     
         popup.innerText = text;
-        popup.style.fontSize = "12px";
+        popup.style.fontSize = "10px";
 
         // ツールチップの位置を設定
         x = elementPosition.left + 50 + window.scrollX;
-        y = elementPosition.top - 150 + window.scrollY;
+        y = elementPosition.top - 115 + window.scrollY;
         popup.style.top = y + "px";
         popup.style.left = x + "px";
 
