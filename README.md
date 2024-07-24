@@ -14,17 +14,19 @@
 
 ・複数画面を切り替えられ、アプリとしてリッチなものを作成してみたい。
 
-・流行りのガチャゲームのようにガチャが引けるゲームを実装してみたい。
+・流行りのガチャゲームのようにガチャを弾けるようにしたい。
 
 # 画面説明
 本アプリは以下の画面を持つ
 | ①メイン画面  | ②アイテム一覧画面|
 | ------------- | ------------- |
-| https://github.com/user-attachments/assets/1f9b5e00-e862-408e-8a41-1e3ed77dda38 | https://github.com/user-attachments/assets/79de0032-4b07-4312-b4f8-f2ae551cf77a |
+| <img width="959" src="https://github.com/user-attachments/assets/1f9b5e00-e862-408e-8a41-1e3ed77dda38"> | <img width="959" src="https://github.com/user-attachments/assets/79de0032-4b07-4312-b4f8-f2ae551cf77a"> |
+| パーツを組み合わせてロボットを完成させる。 | ガチャで入手したパーツを一覧で表示する。 |
 
 | ③ガチャ画面  | ④ゲーム画面 |
 | ------------- | ------------- |
-| https://github.com/user-attachments/assets/38879d39-9f38-4ceb-8cc8-1b7ce352f107 | https://github.com/user-attachments/assets/7209fc4a-61e7-4471-b86c-e6cd4ac5cf95 |
+| <img width="959" src="https://github.com/user-attachments/assets/38879d39-9f38-4ceb-8cc8-1b7ce352f107"> | <img width="959" alt="game" src="https://github.com/user-attachments/assets/7209fc4a-61e7-4471-b86c-e6cd4ac5cf95"> |
+| お金を消費してガチャを引きパーツを入手する。 | 作成したロボットでシューティングゲームを実施する。|
 
 
 # 実行方法
@@ -32,10 +34,11 @@
 実行についてはPycharmにて本アプリのプロジェクトファイルを配置し、実行することで動作を確認することができる。
 
 # 今後の展望
+本アプリは未完成のものになっており、以下については今後修正する予定である。
 
 ・ユーザデータの格納場所をJSONファイルからデータベースに移行する。
 
-・ログ出力
+・ログ出力。
 
 ・ゲームのキャラを増やす。
 
