@@ -1,4 +1,3 @@
-from PIL import Image
 import json
 
 json_path = "./static/data/userData.json"

@@ -1,6 +1,4 @@
 from PIL import Image, ImageOps
-import cv2
-from rembg import remove
 import json
 
 json_path = "./static/data/userData.json"
